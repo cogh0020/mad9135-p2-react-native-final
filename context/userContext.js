@@ -6,6 +6,7 @@ function ContextProvider(props) {
 
   const [triviaQuestions, setTriviaQuestions] = React.useState([])
   const [questionCount, setQuestionCount] = React.useState(5)
+  const [players, setPlayers] = React.useState([])
 
   React.useEffect(() => {
     fetch(`https://opentdb.com/api.php?amount=${questionCount}`)
@@ -16,7 +17,7 @@ function ContextProvider(props) {
     })
   }, [])
 
-  return <Context.Provider value={[triviaQuestions, questionCount, setQuestionCount]}{...props}/>
+  return <Context.Provider value={[triviaQuestions, questionCount, players, setPlayers, setQuestionCount]}{...props}/>
 }
 
 function useContext() {
