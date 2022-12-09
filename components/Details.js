@@ -7,8 +7,10 @@ function Details({}){
   return(
     <SafeAreaView>
       <View>
-        <Text></Text>
+        <Text>Details</Text>
       </View>
     </SafeAreaView>
   )
 }
+
+export default Details

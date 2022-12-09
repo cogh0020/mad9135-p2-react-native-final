@@ -2,8 +2,6 @@ import {View, Text , Switch, StyleSheet, StatusBar, Image, Button} from 'react-n
 
 function HomeScreen() {
 
-
-
   return (
     <View>
       <Text>Home Screen</Text>
